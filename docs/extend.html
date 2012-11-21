@@ -1,0 +1,396 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Chart Chap! - Data Visualization on The Fly</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="Olas Navigator">
+
+	<!-- bootstrap css -->
+	<link href="assets/css/bootstrap.css" rel="stylesheet">
+	
+	<!-- template css -->
+	<link href="app/css/styles.css" rel="stylesheet">
+	<link href="app/css/demo.css" rel="stylesheet">
+	
+	<link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+
+	<!-- HTML5 shim -->
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- sample fav and touch icons -->
+	<link rel="shortcut icon" href="assets/ico/favicon.ico">
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+</head>
+<body>
+	<!-- Header -->
+	<div id="header">
+		<!-- top navbar -->
+		<div class="navbar navbar-blue">
+			<div class="navbar-inner">
+				<a class="brand" href="index.html">Chart Chap!</a>
+				<ul class="nav pull-right">
+					<li class="active"><a href="index.html"><i class="icon-large"><img src='icons/home.png' style='height:15px;'></i> Home</a></li>
+					<li><a href="messages.html"><i class="icon-large"><img src='icons/about.png' style='height:17px;'></i> About</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-large"><img src='icons/tutorial.png' style='height:15px;'></i> Tutorial <b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Topic</a></li>
+							<li><a href="#">Topic2</a></li>
+							<li><a href="#">Topic4</a></li>
+							<li><a href="#">Topic5</a></li>
+							<li><a href="#">Topic5</a></li>
+						</ul>
+					</li>
+					
+					<li><a href="messages.html"><i class="icon-large"><img src='icons/feedback.png' style='height:15px;'></i> Feedback</a></li>
+					<li class="divider-vertical"></li>
+					<li><a href="#"><i class="icon-large"><img src='icons/github.png' style='height:15px;'></i> Github</a></li>
+				</ul>
+			</div>
+		</div><!-- ./ top navbar -->
+	</div>
+
+	<div id="page-wrap">
+		<!-- left sidebar -->
+		<div id="main-sidebar">
+		
+			<!-- sidebar user avatar -->
+			<div class="user-profile">
+				<img class="avatar" src="assets/img/icon.png">
+				<h3></h3>
+				<small><a href="#"></a></small>
+			</div><!-- ./ sidebar user avatar -->
+			
+			<div class="accordion" id="sbAccordion">
+				
+				<!-- accordion content -->
+				<div class="accordion-group">
+					<div class="accordion-heading">
+						<a class="btn btn-danger btn-block" href="index.html">Home</a>
+					</div>
+				</div><!-- ./ accordion content -->
+				
+				<!-- accordion content -->
+				<div class="accordion-group">
+					<div class="accordion-heading">
+						<a class="accordion-toggle btn btn-primary" data-toggle="collapse" data-parent="#sbAccordion" href="#sbaOne">Datasets</a>
+					</div>
+					<div id="sbaOne" class="accordion-body collapse">
+						<div class="accordion-inner">
+							<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+								<li><a tabindex="-1" href="typography.html"><i class="icon-file icon-large"></i> sub1</a></li>
+								<li><a tabindex="-1" href="tables.html"><i class="icon-file icon-large"></i> sub2</a></li>
+							</ul>
+						</div>
+					</div>
+				</div><!-- ./ accordion content -->
+				
+				<!-- accordion content -->
+				
+				<!-- accordion content -->
+				
+				
+				<!-- accordion content -->
+				<div class="accordion-group">
+					<div class="accordion-heading">
+						<a class="accordion-toggle btn btn-success" data-toggle="collapse" data-parent="#sbAccordion" href="#sbaFour">Visualizations</a>
+					</div>
+					<div id="sbaFour" class="accordion-body collapse">
+						<div class="accordion-inner">
+							<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+								<li><a tabindex="-1" href="info-widgets.html"><i class="icon-file icon-large"></i> Sub1</a></li>
+								<li><a tabindex="-1" href="well-dropdowns.html"><i class="icon-file icon-large"></i> Sub2</a></li>
+								
+							</ul>
+						</div>
+					</div>
+				</div><!-- ./ accordion content -->
+				
+			</div>       
+		</div>
+
+		<div id="main-content">
+			<div id="inner">	
+						
+				<div class="container-fluid">
+					<div class="tabbable main-tabs">
+						<!-- main content title -->
+						
+
+						<div class="tab-content">
+							<div class="tab-pane active" id="mainTabReports">
+								<div class="row-fluid">
+									<div class="span9">
+									
+										<div class="well">
+											<div class="navbar">
+												<div class="navbar-inner">
+													<a class="brand" href="#">Daily Visits</a>
+												</div>
+											</div>
+											
+											<div class="info-widget">
+												<div class="row-fluid">
+													<div class="span3">
+														<div class="summary">
+															<h4 class="heading">Direct</h4>
+															<!-- donut chart single value -->
+															<input class="circleP span12" data-fgColor="#62c462" data-bgColor="rgba(0,0,0,0.2)" data-thickness=".3" data-max="300000" data-readOnly=true value="154500"><!-- ./ donut chart single value -->
+														</div>
+													</div>
+													<div class="span3">
+														<div class="summary">
+															<h4 class="heading">Search Engines</h4>
+															<!-- donut chart single value -->
+															<input class="circleP span12" data-fgColor="#ee5f5b" data-bgColor="rgba(0,0,0,0.2)" data-thickness=".3" data-max="300000" data-readOnly=true value="93500"><!-- ./ donut chart single value -->
+														</div>
+													</div>
+													<div class="span3">
+														<div class="summary">
+															<h4 class="heading">Social Networks</h4>
+															<!-- donut chart single value -->
+															<input class="circleP span12" data-fgColor="#5bc0de" data-bgColor="rgba(0,0,0,0.2)" data-thickness=".3" data-max="300000" data-readOnly=true value="82625"><!-- ./ donut chart single value -->
+														</div>
+													</div>
+													<div class="span3">
+														<div class="summary">
+															<h4 class="heading">Others</h4>
+															<!-- donut chart single value -->
+															<input class="circleP span12" data-fgColor="#f89406" data-bgColor="rgba(0,0,0,0.2)" data-thickness=".3" data-max="300000" data-readOnly=true value="17500"><!-- ./ donut chart single value -->
+														</div>
+													</div>
+												</div>
+												<div class="line-divider"></div>
+												<div class="row-fluid">
+													<div class="span5">
+														<!-- donut chart multiple values -->
+														<div id="pieStats" class="multiDonutChart" data-content="[['new', 8000], ['returning', 12000], ['crawlers', 3200]]" data-pie-colors="['#ee5f5b','#bd362f','#832621']" style="width:100%;height:300px;margin:30px 0;"></div><!-- ./ donut chart multiple values -->
+													</div>
+													<div class="span7">
+														<!-- single line chart -->
+														<div id="dailyVisits" class="singleLineChart" data-content="[['01-Aug-2012', 578], ['02-Aug-2012', 566], ['03-Aug-2012', 480], ['04-Aug-2012', 509],['05-Aug-2012', 454], ['06-Aug-2012', 379], ['07-Aug-2012', 303], ['08-Aug-2012', 308],['09-Aug-2012', 299], ['10-Aug-2012', 346], ['11-Aug-2012', 325], ['12-Aug-2012', 386]]" data-line-color="#ee5f5b" style="height:300px; width:100%;margin:30px 0;"></div><!-- ./ single line chart -->
+													</div>
+												</div>
+											</div>
+										</div>
+										
+										<div class="row-fluid">
+											<div class="span6">
+												<div class="well">
+													<div class="navbar">
+														<div class="navbar-inner">
+															<a class="brand" href="#">Network</a>
+														</div>
+													</div>
+													<div class="info-widget stats">
+														<span class="text">1,256 <span class="desc">Friends</span></span>
+														<span class="text">678 <span class="desc">Subscribers</span></span>
+														<span class="text">140 <span class="desc">Friend requests</span></span>
+														<i class="icon-sitemap large-icon"></i>
+													</div>
+												</div>
+											</div>
+											<div class="span6">
+												<div class="well">
+													<div class="navbar">
+														<div class="navbar-inner">
+															<a class="brand" href="#">Contents</a>
+														</div>
+													</div>
+													<div class="info-widget stats">
+														<span class="text">156 <span class="desc">Posts</span></span>
+														<span class="text">116 <span class="desc">Products</span></span>
+														<span class="text">14 <span class="desc">Premium tutorials</span></span>
+														<i class="icon-file large-icon"></i>
+													</div>
+												</div>
+											</div>
+										</div>
+										
+									</div>
+									<div class="span3">
+										<div class="well">
+											<div class="navbar">
+												<div class="navbar-inner">
+													<a class="brand" href="#">STATS</a>
+												</div>
+											</div>
+											<div class="info-widget">
+												<span class="text">300,000</span>
+												<span>Previous:</span><br />
+												<span class="barP" data-color="#bd362f">200000</span>
+												<i class="icon-group large-icon"></i>
+											</div>
+										</div>
+										<h4>Country</h4>
+										<div class="progress-container">	
+											<div class="progress-item">
+												<small>Indonesia</small>
+												<!-- small progress bar -->
+												<div class="progress small">
+													<div class="bar" style="width: 80%"></div>
+												</div>
+												<span class="badge badge-info">80%</span>
+											</div>
+											<div class="progress-item">
+												<small>France</small>
+												<div class="progress small">
+													<div class="bar" style="width: 2%"></div>
+												</div>
+												<span class="badge badge-info">2%</span>
+											</div>
+											<div class="progress-item">
+												<small>Malaysia</small>
+												<div class="progress small">
+													<div class="bar" style="width: 3%"></div>
+												</div>
+												<span class="badge badge-info">3%</span>
+											</div>
+											<div class="progress-item">
+												<small>Singapore</small>
+												<div class="progress small">
+													<div class="bar" style="width: 10%"></div>
+												</div>
+												<span class="badge badge-info">10%</span>
+											</div>
+											<div class="progress-item">
+												<small>United States</small>
+												<div class="progress small">
+													<div class="bar" style="width: 3%"></div>
+												</div>
+												<span class="badge badge-info">3%</span>
+											</div>
+											<div class="progress-item">
+												<small>Not Set</small>
+												<div class="progress small">
+													<div class="bar" style="width: 2%"></div>
+												</div>
+												<span class="badge badge-info">2%</span>
+											</div>
+										</div>
+										<h4>Browsers</h4>
+										<div class="progress-container">	
+											<div class="progress-item">
+												<small>Internet Explorer</small>
+												<div class="progress small">
+													<div class="bar" style="width: 10%"></div>
+												</div>
+												<span class="badge badge-info">10%</span>
+											</div>
+											<div class="progress-item">
+												<small>Opera</small>
+												<div class="progress small">
+													<div class="bar" style="width: 10%"></div>
+												</div>
+												<span class="badge badge-info">10%</span>
+											</div>
+											<div class="progress-item">
+												<small>Safari</small>
+												<div class="progress small">
+													<div class="bar" style="width: 10%"></div>
+												</div>
+												<span class="badge badge-info">10%</span>
+											</div>
+											<div class="progress-item">
+												<small>Firefox</small>
+												<div class="progress small">
+													<div class="bar" style="width: 21%"></div>
+												</div>
+												<span class="badge badge-info">21%</span>
+											</div>
+											<div class="progress-item">
+												<small>Chrome</small>
+												<div class="progress small">
+													<div class="bar" style="width: 43%"></div>
+												</div>
+												<span class="badge badge-info">43%</span>
+											</div>
+											<div class="progress-item">
+												<small>Others</small>
+												<div class="progress small">
+													<div class="bar" style="width: 3%"></div>
+												</div>
+												<span class="badge badge-info">3%</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div id="footer">
+		<div class="container-fluid">
+			<div class="row-fluid">
+				<div class="span12">
+					<div class="navbar navbar-blue">
+						<div class="navbar-inner">
+							<ul class="nav pull-right">
+								<li><a href="#">About</a></li>
+								<li><a href="#">Terms of use</a></li>
+								<li><a href="#">Contacts us</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>	
+	</div>
+
+	<!-- required js files -->
+	<script src="assets/js/jquery.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>	
+
+	<!-- charts plugin -->
+	<script src="app/plugins/jquery.peity.min.js"></script>
+	<script src="app/plugins/jquery.knob.js"></script>
+	<script src="app/plugins/jqplot/jquery.jqplot.min.js"></script>
+	<script src="app/plugins/jqplot/jqplot.highlighter.min.js"></script>
+	<script src="app/plugins/jqplot/jqplot.cursor.min.js"></script>
+	<script src="app/plugins/jqplot/jqplot.dateAxisRenderer.min.js"></script>
+	<script src="app/plugins/jqplot/jqplot.pieRenderer.min.js"></script>
+	<script src="app/plugins/jqplot/jqplot.donutRenderer.min.js"></script>
+	<script src="app/plugins/jqplot/jqplot.barRenderer.min.js"></script>
+	<script src="app/plugins/jqplot/jqplot.categoryAxisRenderer.min.js"></script>
+	<script src="app/plugins/jqplot/jqplot.pointLabels.min.js"></script>
+	
+	<!-- form plugins -->
+	<script src="app/plugins/jquery.elastic.js"></script>
+	<script src="app/plugins/jquery.uniform.js"></script>
+	<script src="app/plugins/bootstrap-datepicker.js"></script>
+	<script src="app/plugins/jquery.timePicker.min.js"></script>
+	<script src="app/plugins/jquery.simple-color-picker.js"></script>
+	<script src="app/plugins/chosen.jquery.min.js"></script>
+	<script src="app/plugins/wysihtml5/wysihtml5-0.3.0.min.js"></script>
+	<script src="app/plugins/wysihtml5/bootstrap-wysihtml5.js"></script>
+	<script src="app/plugins/jquery.limit-1.2.js"></script>
+	<script src="app/plugins/formToWizard.js"></script>
+	
+	<!-- other plugins -->
+	<script src="app/plugins/jquery-ui-custom/jquery-ui-1.8.22.custom.min.js"></script>
+	<script src="app/plugins/DataTables/media/js/jquery.dataTables.js"></script>	
+	<script src="app/plugins/jscrollpane/jquery.mousewheel.js"></script>
+	<script src="app/plugins/jscrollpane/jquery.jscrollpane.min.js"></script>	
+	<script src="app/plugins/fullcalendar.min.js"></script>
+
+	<script src="assets/js/google-code-prettify/prettify.js"></script>
+	
+	<script src="app/plugins/jPages.min.js"></script>
+	<script src="app/plugins/jquery.masonry.min.js"></script>
+
+	<!-- js for templates -->
+	<script src="app/js/custom.js"></script>
+</body>
+</html>

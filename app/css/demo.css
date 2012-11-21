@@ -1,0 +1,7 @@
+/** for demo purpose **/
+.dropdown-toggle.sample {font-size:14px;font-weight:bold;}
+table.table {margin-bottom:15px!important;}
+.demo-list {margin: 0 0 0 10px;padding: 0;list-style: none;}
+.demo-list li {margin: 0 0 10px 0;display: inline-block;float: left;width: 25%;line-height: 40px;}
+.demo-list i {font-size: 30px;line-height: 40px;}
+.demo-btn .btn {margin:0 10px 10px 0;width:130px;}
